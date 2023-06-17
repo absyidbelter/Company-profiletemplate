@@ -13,8 +13,8 @@ const ItemClient = ({ src, text }) => {
   };
 
   return (
-    <div className="impactfull-card" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-      <div className="container-client">
+    <div className="impactfull-card-project" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+      <div className="container">
         <img src={src} alt="Avatar" className="image-client" />
         {showOverlay && (
           <div className="overlay-client">

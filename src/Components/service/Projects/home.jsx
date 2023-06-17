@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import Services from "../../utils";
+import ServiceMapers from "../../utils";
 import { FaAngleRight } from "react-icons/fa";
 import {
   headingAnimation,
@@ -39,7 +39,7 @@ const JasaLayanan = () => {
         animate={viewDiv && "visible"}
         variants={sectionBodyAnimation}
       >
-        {Services?.map((service) => (
+        {ServiceMapers?.map((service) => (
           <div
             key={service.id}
             className={`${
@@ -48,13 +48,13 @@ const JasaLayanan = () => {
                 : "bg-base-100 impactfull-card shadow-lg"
             } rounded-lg p-6 duration-300`}
           >
-            <div style={{ backgroundColor: "#24b47e", padding: "16px", borderRadius: "8px" }}>
-              <h3 className="mb-0 text-2xl font-semibold text-center text-white">
+            <div style={{ backgroundColor: "#24b47e", padding: "16px", borderRadius: "8px", marginRight: "15px"}}>
+              <h3 className="mb-0 text-2xl font-semibold text-center text-white" style={{ color: "white" }}>
                 {service.title}
               </h3>
             </div>
             {service.description && (
-              <ul className="text-accent list-disc pl-8">
+              <ul className="text-accent list-disc pl-8" style={{ paddingBottom: "60px" }}>
                 {service.description
                   .split("\n")
                   .filter((s) => s.trim() !== "")

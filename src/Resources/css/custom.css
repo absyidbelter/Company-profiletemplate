@@ -23,7 +23,10 @@ p {
   font-family: "Roboto";
   color: #767676;
 }
-h4,
+h4 { 
+  color: #ffffff;
+}
+
 h3,
 h1,
 h2 {

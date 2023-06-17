@@ -1,5 +1,5 @@
-Mengubah warna background menjadi putih dan menambahkan bayangan .cover-page {
-  background-color: #ffffff;
+.cover-page {
+  background-color: #e95a5a;
   padding: 20px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }

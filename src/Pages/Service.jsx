@@ -1,15 +1,29 @@
-import React from 'react';
-import { NavLink, useNavigate } from 'react-router-dom';
-import '../Resources/css/service.css';
-import { ServiceCom } from '../Components';
-import ClientCom from '../Components/klien/Client';
+import React, { useEffect, useState } from "react";
+import { NavLink, useNavigate } from "react-router-dom";
+import "../Resources/css/service.css";
+import { motion, useAnimation } from "framer-motion";
+import ServiceMapers from "../Components/utils";
+import { useInView } from "react-intersection-observer";
+import { headingAnimation, sectionBodyAnimation } from "../hooks/useAnimation";
+import ClientCom from "../Components/Assets/Asset";
 
 const Services = () => {
   let Navigate = useNavigate();
 
   let Homehandle = () => {
-    Navigate('/home');
+    Navigate("/home");
   };
+  const [ref, inView] = useInView();
+  const [viewDiv, setViewDiv] = useState(false);
+  const animation = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      setViewDiv(true);
+    } else {
+      setViewDiv(false);
+    }
+  }, [inView, animation]);
 
   return (
     <>
@@ -28,37 +42,83 @@ const Services = () => {
           </ul>
         </div>
       </div>
-      <section id="services">
-        <div className="services">
-       
-          <span className="green u-text-sup">Berdasarkan kualifikasi yang dimiliki PT. Bangun Inti Nusa, kami dapat memberikan layanan jasa sebagai
-            berikut:</span>
-          <div className="service-category">
-            <h3>BANGUNAN GEDUNG</h3>
-            <ul>
-              <li>Konstruksi Bangunan Gudang dan Industri</li>
-              <li>Konstruksi Bangunan Pendidikan</li>
-            </ul>
-          </div>
-          <div className="service-category" style={{ borderRadius: 0 }}>
-            <h3>BANGUNAN SIPIL</h3>
-            <ul>
-              <li>Konstruksi Saluran Air, Dam, Pelabuhan, dan Prasarana Sumber Daya Air Lainnya</li>
-              <li>Konstruksi Jalan Raya (Kecuali jalan layang), Jalan, Rel, Kereta Api, dan Landas Pacu Bandara</li>
-            </ul>
-          </div>
-          <div className="service-category">
-            <h3>INSTALASI MEKANIKAL DAN ELEKTRIKAL</h3>
-            <ul>
-              <li>Konstruksi Instalasi Elektrikal Lainnya</li>
-            </ul>
-          </div>
+      <section>
+        <h1
+          style={{
+            color: "black",
+            textAlign: "left",
 
-          <h3 className="client-heading">Klien Kami</h3>
-        </div>
-        <ClientCom/>
+            paddingTop: 40,
+            textAlign: "center",
+          }}
+        >
+          Lingkup Pelayanan
+        </h1>
+        <h3
+          style={{
+            color: "black",
+            textAlign: "left",
+
+            fontWeight: "normal",
+            paddingBottom: "15px",
+            textAlign: "center",
+          }}
+        >
+          Berdasarkan kualifikasi yang dimiliki PT. Bangun Inti Nusa dapat
+          memberikan layanan jasa sebagai berikut :
+        </h3>
+        <motion.div
+          className="grid grid-cols-3 gap-6 justify-center"
+          ref={ref}
+          initial="hidden"
+          animate={viewDiv && "visible"}
+          variants={sectionBodyAnimation}
+        >
+          {ServiceMapers?.map((service) => (
+            <div
+              key={service.id}
+              className={`${
+                service.id % 2 === 0
+                  ? "bg-base-100 impactfull-card shadow-lg"
+                  : "bg-base-100 impactfull-card shadow-lg"
+              } rounded-lg p-6 duration-300`}
+            >
+              <div
+                style={{
+                  backgroundColor: "#24b47e",
+                  padding: "16px",
+                  borderRadius: "8px",
+                  marginRight: "15px",
+                }}
+              >
+                <h3
+                  className="mb-0 text-2xl font-semibold text-center text-white"
+                  style={{ color: "white" }}
+                >
+                  {service.title}
+                </h3>
+              </div>
+              {service.description && (
+                <ul className="text-accent list-disc pl-8">
+                  {service.description
+                    .split("\n")
+                    .filter((s) => s.trim() !== "")
+                    .map((s, i) => (
+                      <li
+                        key={i + 1}
+                        className="mb-4 text-justify text-gray-500"
+                      >
+                        {s.trim()}
+                      </li>
+                    ))}
+                </ul>
+              )}
+            </div>
+          ))}
+        </motion.div>
       </section>
     </>
+
   );
 };
 

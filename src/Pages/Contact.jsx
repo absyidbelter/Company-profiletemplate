@@ -1,7 +1,5 @@
-import { faEnvelope, faMap } from "@fortawesome/free-regular-svg-icons";
-import { faFax, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faMap, faFax, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import maps from '../Resources/img/maps.png';
 import { NavLink } from "react-router-dom";
 import "../Resources/css/contact.css";
 
@@ -26,51 +24,50 @@ const Contact = () => {
         </div>
       </div>
       <section id="contactus">
-        {/* ,,,, */}
         <div className="flex" style={{ marginTop: "80px", marginLeft: "40px" }}>
-          <div className="flex">
-            <div className="item w-10">
-              <span className="green u-text-sup">Hubungi Kami</span>
-              <div className="item contact-info mt-30 flex">
-                <div className="item w-50">
-                  <div className="contact-text">
-                    <i className="icon">
-                      <FontAwesomeIcon icon={faPhone} size="sm" />
-                    </i>{" "}
-                    <span>
-                      <a href="tel:081249450891">081249450891</a> atau{" "}
-                      <a href="tel:085106634133">085106634133</a>
-                    </span>
-                  </div>
+          <div className="item w-40">
+            <span className="green u-text-sup">Hubungi Kami</span>
+            <div className="contact-info mt-30 flex">
+              <div className="item w-100">
+                <h1>PT BANGUN INTI NUSA</h1>
+                <h5> Kontraktor Umum dan Perdagangan</h5>
+                <div className="contact-text">
+                  <i className="icon">
+                    <FontAwesomeIcon icon={faPhone} size="sm" />
+                  </i>{" "}
+                  <span>
+                    <a href="tel:081249450891">081249450891</a> atau{" "}
+                    <a href="tel:085106634133">085106634133</a>
+                  </span>
                 </div>
-                <div className="item w-50">
-                  <div className="contact-text">
-                    <i className="icon">
-                      <FontAwesomeIcon icon={faEnvelope} size="sm" />
-                    </i>{" "}
-                    <a href="mailto:pt.bangunintinusa@gmail.com">
-                      pt.bangunintinusa@gmail.com
-                    </a>
-                  </div>
+              </div>
+              <div className="item w-100">
+                <div className="contact-text">
+                  <i className="icon">
+                    <FontAwesomeIcon icon={faEnvelope} size="sm" />
+                  </i>{" "}
+                  <a href="mailto:pt.bangunintinusa@gmail.com">
+                    pt.bangunintinusa@gmail.com
+                  </a>
                 </div>
-                <div className="item w-50">
-                  <div className="contact-text">
-                    <i className="icon">
-                      <FontAwesomeIcon icon={faMap} size="sm" />
-                    </i>{" "}
-                    <span>
-                      Perum. Bengawan Solo Regency Block C - No. 01Kota Blitar,
-                      Jawa Timur
-                    </span>
-                  </div>
+              </div>
+              <div className="item w-100">
+                <div className="contact-text">
+                  <i className="icon">
+                    <FontAwesomeIcon icon={faMap} size="sm" />
+                  </i>{" "}
+                  <span>
+                    Perum. Bengawan Solo Regency Block C - No. 01Kota Blitar,
+                    Jawa Timur
+                  </span>
                 </div>
-                <div className="item w-50">
-                  <div className="contact-text">
-                    <i className="icon">
-                      <FontAwesomeIcon icon={faFax} size="sm" />
-                    </i>{" "}
-                    03428180890
-                  </div>
+              </div>
+              <div className="item w-100">
+                <div className="contact-text">
+                  <i className="icon">
+                    <FontAwesomeIcon icon={faFax} size="sm" />
+                  </i>{" "}
+                  03428180890
                 </div>
               </div>
             </div>
@@ -96,9 +93,6 @@ const Contact = () => {
           </div>
         </div>
       </section>
-      <footer className="footer">
-        <p>Ini adalah footer</p>
-      </footer>
     </>
   );
 };

@@ -1,14 +1,11 @@
-// line one and two for gallery
-
-import { Item } from "../../Components";
 import one from "../../Resources/img/logo3.jpeg";
 import two from "../../Resources/img/logo4.jpeg";
-import three from "../../Resources/img/logo6.jpeg"
-import four from "../../Resources/img/logo5.jpeg";
+import three from "../../Resources/img/logo5.jpeg";
+import four from "../../Resources/img/logo6.jpeg";
 import five from "../../Resources/img/logo1.jpeg";
 import six from "../../Resources/img/logo2.jpeg";
 import seven from "../../Resources/img/logo7.jpeg";
-import "../../Resources/css/project.css";
+import "../../Resources/css/service.css";
 import ItemClient from "./Item";
 
 const ContinarClient = () => {
