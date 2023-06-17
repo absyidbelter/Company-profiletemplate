@@ -9,8 +9,9 @@ import five from "../../Resources/img/logo1.jpeg";
 import six from "../../Resources/img/logo2.jpeg";
 import seven from "../../Resources/img/logo7.jpeg";
 import "../../Resources/css/project.css";
+import ItemClient from "./Item";
 
-const Continar = () => {
+const ContinarClient = () => {
   const images = [one, two, three, four, five, six, seven];
   const texts = [
     "01-Saluran Box Culvert Universitas Brawijaya Malang",
@@ -25,22 +26,22 @@ const Continar = () => {
   return (
     <div className="grid card-container">
       <div className="row-reverse">
-        <Item src={images[0]} text={texts[0]} />
-        <Item src={images[3]} text={texts[3]} />
+        <ItemClient src={images[0]} text={texts[0]} />
+        <ItemClient src={images[3]} text={texts[3]} />
       </div>
       <div className="row-reverse">
-        <Item src={images[1]} text={texts[1]} />
-        <Item src={images[4]} text={texts[4]} />
+        <ItemClient src={images[1]} text={texts[1]} />
+        <ItemClient src={images[4]} text={texts[4]} />
       </div>
       <div className="row-reverse">
-        <Item src={images[2]} text={texts[2]} />
-        <Item src={images[5]} text={texts[5]} />
+        <ItemClient src={images[2]} text={texts[2]} />
+        <ItemClient src={images[5]} text={texts[5]} />
       </div>
       <div className="row-reverse">
-        <Item src={images[6]} text={texts[6]} />
+        <ItemClient src={images[6]} text={texts[6]} />
       </div>
     </div>
   );
 };
 
-export default Continar;
+export default ContinarClient;

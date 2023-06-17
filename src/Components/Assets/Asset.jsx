@@ -1,25 +1,23 @@
 import { useState } from "react";
 import ContinarAs from "./ContinarOne";
 import ContinarOne from "./ContinarOne";
-import ContinarAss from "./Continar";
-import ContinarTwo from "./ContinarTwo";
+// import ContinarAss from "./Continar";
+// import ContinarTwo from "./ContinarTwo";
 import PeralatanPDF from "../../Resources/pdf/Peralatan.pdf";
 import "../../Resources/css/asset.css";
+import ContinarTwo from "./Continar";
 
 const AssetCom = () => {
   return (
     <section id="project">
       <section>
-      <span className="green u-text-sup ">Kantor Kami</span>
-        {" "}
-        <ContinarOne />
+        <span className="green u-text-sup ">Kantor Kami</span> <ContinarOne />
       </section>
-
-      <span className="green u-text-sup">Workshop</span>
       <section>
-        <ContinarAss />
-        <ContinarTwo />
+        <span className="green u-text-sup">Workshop</span>
       </section>
+      <ContinarTwo />
+      <section></section>
       <span className="green u-text-sup">Peralatan</span>
       <section className="peralatan-section">
         <div className="peralatan-container">

@@ -1,6 +1,5 @@
-import { useState } from "react";
-import { Continar } from "..";
-import "../../Resources/css/project.css";
+import "../../Resources/css/service.css";
+import ContinarClient from "./Continar";
 
 const ClientCom = () => {
   return (
@@ -9,7 +8,7 @@ const ClientCom = () => {
         <span className="green u-text-sup">Galeri Proyek</span>
       </div>
       <div style={{ marginTop: "70px" }}> 
-        <Continar />
+        <ContinarClient />
       </div>
     </section>
   );

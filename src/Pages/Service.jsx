@@ -56,8 +56,7 @@ const Services = () => {
 
           <h3 className="client-heading">Klien Kami</h3>
         </div>
-        {/* <ServiceCom/> */}
-        {/* <ClientCom/> */}
+        <ClientCom/>
       </section>
     </>
   );

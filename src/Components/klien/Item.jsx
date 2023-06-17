@@ -1,7 +1,7 @@
-import "../../Resources/css/project.css";
+import "../../Resources/css/service.css";
 import { useState } from "react";
 
-const Item = ({ src, text }) => {
+const ItemClient = ({ src, text }) => {
   const [showOverlay, setShowOverlay] = useState(false);
 
   const handleMouseEnter = () => {
@@ -14,10 +14,10 @@ const Item = ({ src, text }) => {
 
   return (
     <div className="impactfull-card" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-      <div className="container">
-        <img src={src} alt="Avatar" className="image" />
+      <div className="container-client">
+        <img src={src} alt="Avatar" className="image-client" />
         {showOverlay && (
-          <div className="overlay">
+          <div className="overlay-client">
             <div className="text">{text}</div>
           </div>
         )}
@@ -26,4 +26,4 @@ const Item = ({ src, text }) => {
   );
 };
 
-export default Item;
+export default ItemClient;

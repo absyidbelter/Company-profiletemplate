@@ -1,25 +1,30 @@
-import "../../Resources/css/asset.css";
-
+import "../../Resources/css/project.css";
 import { useState } from "react";
 
-const ItemAss = ({ src }) => {
-    const [showOverlay, setShowOverlay] = useState(false);
-  
-    const handleMouseEnter = () => {
-      setShowOverlay(true);
-    };
-  
-    const handleMouseLeave = () => {
-      setShowOverlay(false);
-    };
-  
-    return (
-      <div className="item" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-        <div className="container">
-          <img src={src} alt="Avatar" className="image" />
-        </div>
-      </div>
-    );
+const ItemTwo = ({ src }) => {
+  const [showOverlay, setShowOverlay] = useState(false);
+
+  const handleMouseEnter = () => {
+    setShowOverlay(true);
   };
-  
-  export default ItemAss;
+
+  const handleMouseLeave = () => {
+    setShowOverlay(false);
+  };
+
+  return (
+    <div className="impactfull-card-asset">
+      <div className="container">
+        <img src={src} alt="Avatar" className="image-asset" />
+        <img src={src} alt="Avatar" className="image-project" />
+        {showOverlay && (
+          <div className="overlay">
+            <div className="text">hallo</div>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+};
+
+export default ItemTwo;

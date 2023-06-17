@@ -98,7 +98,6 @@ textarea:focus-visible {
   color: #000;
 }
 
-
 .right {
   float: right;
 }
@@ -219,8 +218,6 @@ ul.topnav li.right {
   color: #24b47e !important;
 }
 
-/* batas global */
-
 .Cover-content a {
   background: #24b47e;
   color: #fff;
@@ -267,19 +264,6 @@ iframe {
   justify-content: center;
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: 0.5s ease;
-  background-color: #00aa6c96;
-  border-radius: 5px;
-}
 .text-center {
   text-align: center !important;
 }
@@ -299,6 +283,10 @@ iframe {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
+
+/* batas global */
+
 .item.contact-info .item {
   width: 50%;
 }

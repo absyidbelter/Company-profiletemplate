@@ -19,10 +19,10 @@ iframe {
   justify-content: center;
 }
 
-.image {
+.image-asset {
   display: block;
-  width: 50%;
-  height: 50%;
+  width: 200%;
+  height: 100%;
   border-radius: 5px;
   object-fit: cover;
 }
@@ -49,6 +49,18 @@ iframe {
   flex-direction: row-reverse;
 }
 
+.impactfull-card-asset {
+  border-image: linear-gradient(to top, #ffffff 0%, #ffffff);
+  border-image-slice: 1;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  width: 350px;
+  height: 300px;
+  margin: 5px;
+  vertical-align: top;
+  border-radius: 5px !important;
+  overflow: hidden; /* Added overflow property */
+}
 
 @media only screen and (max-width: 600px) {
   .container {
