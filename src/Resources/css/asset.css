@@ -1,0 +1,71 @@
+.container {
+  position: relative;
+  width: 50%;
+}
+
+iframe {
+  width: 100vw;
+}
+
+.Cover-content h1 {
+  font-size: 60px;
+  margin-bottom: 5px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.text-center {
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  display: block;
+  width: 50%;
+  height: 50%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.imageOne {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.peralatan-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.peralatan-container {
+  width: 100%;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+
+  .image {
+    width: 300%;
+    height: auto;
+  }
+
+  .imageOne {
+    width: 100%;
+    height: auto;
+  }
+
+  .Cover-content h1 {
+    font-size: 40px;
+  }
+}

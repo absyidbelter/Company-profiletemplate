@@ -1,0 +1,15 @@
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .text-white {
+    color: rgb(254, 120, 120);
+  }
+  
+  .font-roboto {
+    font-family: "Roboto", sans-serif;
+  }
+  
+  

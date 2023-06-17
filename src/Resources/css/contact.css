@@ -1,0 +1,174 @@
+Mengubah warna background menjadi putih dan menambahkan bayangan .cover-page {
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tit h1 {
+  font-size: 28px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.breadcrumb {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  margin-bottom: 20px;
+}
+
+.breadcrumb li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.breadcrumb li a {
+  color: #666;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.breadcrumb li::after {
+  content: "/";
+  margin: 0 5px;
+  color: #999;
+}
+
+.breadcrumb li:last-child::after {
+  content: none;
+}
+
+.active {
+  color: #333;
+  font-weight: bold;
+}
+
+#contactus {
+  padding: 20px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  flex: 1 1 100%;
+}
+
+.w-40 {
+  flex-basis: 40%;
+}
+
+.w-60 {
+  flex-basis: 60%;
+}
+
+.item h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.contact-info {
+  margin-top: 30px;
+}
+
+.contact-text {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: auto;
+  flex-wrap: wrap;
+}
+
+.w-50 {
+  flex-basis: 50%;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.icon svg {
+  width: 15px;
+  height: 15px;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.cover-page {
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  flex: 1;
+}
+
+.footer {
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+.map-container {
+  position: relative;
+}
+
+.map-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.marker-image {
+  width: 50px; 
+  height: 50px; 
+}
+
+.map-image {
+  width: 100%;
+  height: auto;
+}
+
+.item.contact-info i {
+  color: #fff;
+  background: #05aa6d;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  line-height: 50px;
+  text-align: center;
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.item.contact-info .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: #05aa6d;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
