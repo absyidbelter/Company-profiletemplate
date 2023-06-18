@@ -4,11 +4,11 @@ import About from "../Pages/About";
 import Project from "./Projects/Project";
 import Projects from "../Pages/Projects";
 import Contact from "../Pages/Contact";
-import Continar from "./Projects/Continar";
 import Item from "./Projects/Item";
+import Continar from "./Projects/Continar";
 import ServiceCom from "./service/Projects/Service";
-import ContinarSer from "./service/Projects/Continar";
-import ItemSer from "./service/Projects/Item";
+import ContinarSer from "./service/Projects/ContinarOne";
+import ItemSer from "./service/Projects/ItemOne";
 
 export {
   Router,
