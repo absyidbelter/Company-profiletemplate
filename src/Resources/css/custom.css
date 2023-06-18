@@ -115,6 +115,7 @@ footer {
   padding: 0;
   line-height: 26px;
   color: #767676;
+  display: flex;
 }
 
 /* global */
@@ -198,10 +199,7 @@ ul.topnav li.right {
   color: #fff;
   width: 100%;
 }
-.flex {
-  display: flex;
-  /* align-items: center; */
-}
+
 
 .Cover-content {
   width: 50%;
@@ -415,8 +413,22 @@ ul.breadcrumb li a.active {
   margin-bottom: 0;
 }
 
-.flex {
+.about.flex {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
+
+.about .item {
+  flex: 0 0 calc(50% - 15px);
+  margin-bottom: 30px;
+}
+
+.about .item:first-child {
+  margin-left: 30px;
+}
+
+.about .green-btn {
+  align-self: flex-start;
+}
+

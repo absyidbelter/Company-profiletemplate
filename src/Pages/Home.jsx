@@ -29,18 +29,20 @@ const Home = () => {
           <div className="item">
             <img src={logo} alt="" />
           </div>
-          <div className="item pt-30">
-            <span className="green u-text-sup">Tentang Kami</span>
-            <p>
-              PT. BANGUN INTI NUSA merupakan salah satu perusahaan yang bergerak
-              dibidang jasa konstruksi swasta nasional yang didirikan di kota
-              Blitar pada tanggal 2 Januari 2019 sebagai langkah usaha untuk
-              mengisi pembangunan bangsa dan negara.
-            </p>
-            <div>
-              <a onClick={AboutHandle} className="green-btn">
-                Read More
-              </a>
+          <div className="item">
+            <div className="flex">
+              <div>
+                <span className="green u-text-sup">Tentang Kami</span>
+                <p>
+                  PT. BANGUN INTI NUSA merupakan salah satu perusahaan yang
+                  bergerak dibidang jasa konstruksi swasta nasional yang
+                  didirikan di kota Blitar pada tanggal 2 Januari 2019 sebagai
+                  langkah usaha untuk mengisi pembangunan bangsa dan negara.
+                </p>
+                <a onClick={AboutHandle} className="green-btn">
+                  Read More
+                </a>
+              </div>
             </div>
           </div>
         </div>
