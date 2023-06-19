@@ -11,48 +11,61 @@
   margin: 5px;
 }
 
-.impactfull-card-project {
+.impactfull-card-service {
   border-image: linear-gradient(to top, #24b47e 0%, #24b47e);
   border-image-slice: 1;
   background-color: transparent;
   backdrop-filter: blur(10px);
-  width: 350px;
-  height: 300px;
+  width: 175px;
+  height: 150px;
   margin: 5px;
   vertical-align: top;
   border-radius: 5px !important;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
-.container {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.image-client {
+.image-service {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 5px !important;
 }
 
-.overlay-client {
+.text-service {
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container-service {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* margin-left: 20px; */
+}
+
+.overlay-service {
   position: absolute;
   top: 0;
-  bottom: 0;
   left: 0;
   right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 1;
+  bottom: 0;
+  opacity: 0;
   transition: 0.5s ease;
   background-color: #00aa6c96;
   border-radius: 5px;
+  height: 100%;
+  width: 100%;
 }
 
-.text {
-  color: white;
-  font-size: 14px;
-  text-align: center;
+.impactfull-card-service:hover .overlay-service {
+  opacity: 1;
 }

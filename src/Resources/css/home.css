@@ -1,0 +1,10 @@
+.contact-text-home {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: auto;
+    flex-wrap: wrap;
+    color: rgb(6, 6, 6);
+  }
+  
