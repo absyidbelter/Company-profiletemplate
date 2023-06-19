@@ -55,7 +55,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section id="clients" style={{ backgroundColor: "#e9e9e9" }}>
+      <section id="clients" style={{ backgroundColor: "#F8F8FF" }}>
         <div style={{ marginTop: "50px", marginBottom: "80px" }}>
           <div>
             <span
@@ -72,6 +72,7 @@ const Home = () => {
           <JasaLayanan />
         </div>
       </section>
+      
       <section>
         <div style={{ marginTop: "60px", marginBottom: "60px" }}>
           <div>
@@ -123,10 +124,9 @@ const Home = () => {
                 <i className="icon">
                   <FontAwesomeIcon icon={faMap} size="sm" />
                 </i>{" "}
-                <span>
-                  Perum. Bengawan Solo Regency Block C - No. 01 Kota Blitar , 
+                <span style={{marginRight: "-150px"}}> 
+                  Perum. Bengawan Solo Regency Block C - No. 01 Kota Blitar, Jawa Timur 
                 </span>
-                <span > Jawa Timur</span>
               </div>
             </div>
             <div className="item w-100">
@@ -137,8 +137,8 @@ const Home = () => {
                 03428180890
               </div>
             </div>
+            <div style={{marginTop:"10px", fontFamily:"Comic Sans MS", fontWeight:"bold", fontSize:"20px"}}> www.bangunintinusa.com</div>
           </div>
-          {/* </div> */}
         </div>
       </section>
     </>

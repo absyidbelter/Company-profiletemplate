@@ -6,6 +6,8 @@ import ServiceMapers from "../Components/utils";
 import { useInView } from "react-intersection-observer";
 import { headingAnimation, sectionBodyAnimation } from "../hooks/useAnimation";
 import ClientCom from "../Components/Assets/Asset";
+import Footer from "../Components/Footer/Footer";
+import { ServiceCom } from "../Components";
 
 const Services = () => {
   let Navigate = useNavigate();
@@ -29,7 +31,7 @@ const Services = () => {
     <>
       <div className="cover-page">
         <div className="tit">
-          <h1>Layanan</h1>
+          <h1>Lingkup Pelayanan</h1>
           <ul className="breadcrumb">
             <li>
               <button onClick={Homehandle}>Home</button>
@@ -117,8 +119,23 @@ const Services = () => {
           ))}
         </motion.div>
       </section>
+      <div style={{ marginTop: "0px", marginBottom: "60px" }}>
+        <div>
+          <span
+            className="green u-text-sup text-center"
+            style={{ fontSize: "24px" }}
+          >
+            Klein Kami
+          </span>
+          <p className="text-center">
+            Kami telah menyelesaikan berbagai proyek dengan klien kami sebagai
+            berikut:{" "}
+          </p>
+        </div>
+        <ServiceCom />
+      </div>
+      <Footer />
     </>
-
   );
 };
 

@@ -1,6 +1,7 @@
 import { NavLink, useNavigate } from "react-router-dom";
 import logo from "../Resources/img/logo.png";
 import TentangKamiPDF from "../Resources/pdf/TentangKami.pdf";
+import Footer from "../Components/Footer/Footer";
 
 const About = () => {
   let Navigate = useNavigate();
@@ -27,7 +28,7 @@ const About = () => {
         </div>
       </div>
       <section id="about">
-        <section style={{marginLeft: "-30px"}}>
+        <section style={{ marginLeft: "-30px" }}>
           <div className="about flex main-container mt-30">
             <div className="item">
               <img src={logo} alt="" />
@@ -45,7 +46,7 @@ const About = () => {
             </div>
           </div>
         </section>
-        <section style={{marginTop:"-120px"}}>
+        <section style={{ marginTop: "-120px" }}>
           <h4 className="green u-text-sup ">Visi dan Misi</h4>
           <p style={{ color: "black" }}>
             Visi: Menjadi mitra terbaik sebagai kontraktor Nasional.
@@ -74,6 +75,7 @@ const About = () => {
           </div>
         </section>
       </section>
+      <Footer />
     </>
   );
 };

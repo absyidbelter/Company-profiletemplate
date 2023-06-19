@@ -12,14 +12,17 @@ import ContinarFours from "./three/Continar-4";
 import ContinarThree from "./three/Continar-3";
 import ContinarEight from "./three/Continar-8";
 import ContinarFifteen from "./three/15-Continar copy";
+import ContinarExperience from "./one/Continar -Ex";
 
 const ProjectCom = () => {
   return (
     <section id="project">
       <div>
-        <span className="green u-text-sup">Galeri Proyek</span>
-      </div>
-      <div style={{ marginTop: "70px" }}>
+        <section style={{ marginTop: "-200"}}>
+          <h1>Riwayat Pengerjaan Proyek</h1>
+          <ContinarExperience/>
+        </section >
+      
         <section>
           <h1>Pekerjaan Proyek Tahun 2019</h1>
         </section>
@@ -37,7 +40,7 @@ const ProjectCom = () => {
         <section>
           <h1>Pekerjaan Proyek Tahun 2020</h1>
         </section>
-        <ContinarFifteen/>
+        <ContinarFifteen />
       </div>
     </section>
   );

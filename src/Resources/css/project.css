@@ -24,10 +24,22 @@
   height: 100%;
 }
 
+.container-ex {
+  position: relative;
+  width: 1%;
+  height: 100%;
+}
 
 .image-project {
   width: 200%;
   height: 100%;
+  object-fit: cover;
+  border-radius: 5px !important;
+}
+
+.image-experience {
+  width: 50%;
+  height: 50%;
   object-fit: cover;
   border-radius: 5px !important;
 }

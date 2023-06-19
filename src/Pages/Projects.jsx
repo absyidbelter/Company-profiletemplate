@@ -1,6 +1,7 @@
 import React from "react";
 import { Project } from "../Components";
 import { NavLink } from "react-router-dom";
+import Footer from "../Components/Footer/Footer";
 
 const Projects = () => {
   return (
@@ -27,6 +28,7 @@ const Projects = () => {
         </div>
       </div>
       <Project />
+      <Footer/>
     </>
   );
 };

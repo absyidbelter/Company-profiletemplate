@@ -1,7 +1,7 @@
 import "../../Resources/css/project.css";
 import { useState } from "react";
 
-const Item = ({ src, text }) => {
+const ItemEx = ({ src, text }) => {
   const [showOverlay, setShowOverlay] = useState(false);
 
   const handleMouseEnter = () => {
@@ -26,4 +26,4 @@ const Item = ({ src, text }) => {
   );
 };
 
-export default Item;
+export default ItemEx;

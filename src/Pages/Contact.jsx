@@ -2,6 +2,7 @@ import { faEnvelope, faMap, faFax, faPhone } from "@fortawesome/free-solid-svg-i
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { NavLink } from "react-router-dom";
 import "../Resources/css/contact.css";
+import Footer from "../Components/Footer/Footer";
 
 const Contact = () => {
   return (
@@ -93,6 +94,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
+      <Footer/>
     </>
   );
 };
