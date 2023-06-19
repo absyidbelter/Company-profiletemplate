@@ -32,7 +32,7 @@ const Footer = () => {
               }}
             >
               {" "}
-              www.bangunintinusa.com
+              bangunintinusa.com
             </div>
           </div>
         </div>

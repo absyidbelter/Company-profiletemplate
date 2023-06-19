@@ -125,7 +125,7 @@ const Services = () => {
             className="green u-text-sup text-center"
             style={{ fontSize: "24px" }}
           >
-            Klein Kami
+            Klien Kami
           </span>
           <p className="text-center">
             Kami telah menyelesaikan berbagai proyek dengan klien kami sebagai

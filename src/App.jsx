@@ -14,24 +14,24 @@ const App = () => {
           </li>
           <div className="right">
             <li>
-              <NavLink exact activeClassName="active" to="/home">
-                Home
+              <NavLink exact activeClassName="active" to="/beranda">
+                Beranda
               </NavLink>
             </li>
             <li>
-              <NavLink to="/about">Tentang Kami</NavLink>
+              <NavLink to="/tentang-kami">Tentang Kami</NavLink>
             </li>
             <li>
-              <NavLink to="/services">Lingkup Pelayanan</NavLink>
+              <NavLink to="/lingkup-pelayanan">Lingkup Pelayanan</NavLink>
             </li>
             <li>
               <NavLink to="/galeri">Galeri</NavLink>
             </li>
             <li>
-              <NavLink to="/assets">Aset Pendukung</NavLink>
+              <NavLink to="/aset-pendukung">Aset Pendukung</NavLink>
             </li>
             <li>
-              <NavLink to="/contact">Kontak</NavLink>
+              <NavLink to="/kontak">Kontak</NavLink>
             </li>
           </div>
         </ul>

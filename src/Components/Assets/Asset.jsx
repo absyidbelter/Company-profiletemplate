@@ -89,7 +89,7 @@ const AssetCom = () => {
                 }}
               >
                 {" "}
-                www.bangunintinusa.com
+                bangunintinusa.com
               </div>
             </div>
           </div>

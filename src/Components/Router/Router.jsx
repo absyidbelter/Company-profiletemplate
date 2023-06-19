@@ -8,12 +8,12 @@ const Router = () => {
     <>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/services" element={<Services />} />
+        <Route path="/beranda" element={<Home />} />
+        <Route path="/tentang-kami" element={<About />} />
+        <Route path="/lingkup-pelayanan" element={<Services />} />
         <Route path="/galeri" element={<Projects />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/assets" element={<Assets />} />
+        <Route path="/aset-pendukung" element={<Contact />} />
+        <Route path="/kontak" element={<Assets />} />
       </Routes>
     </>
   );

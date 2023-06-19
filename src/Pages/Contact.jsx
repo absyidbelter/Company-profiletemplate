@@ -1,4 +1,9 @@
-import { faEnvelope, faMap, faFax, faPhone } from "@fortawesome/free-solid-svg-icons";
+import {
+  faEnvelope,
+  faMap,
+  faFax,
+  faPhone,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { NavLink } from "react-router-dom";
 import "../Resources/css/contact.css";
@@ -81,10 +86,13 @@ const Contact = () => {
             style={{ marginRight: "40px", marginLeft: "40px" }}
           >
             <span className="green u-text-sup">Titik Lokasi</span>
-            <div className="map-container">
+            <div
+              className="map-container"
+              style={{ marginTop: "30px", marginBottom: "50px" }}
+            >
               <iframe
                 title="Peta Lokasi"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1978.8952614165132!2d111.96566571611682!3d-8.097516599334214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd3bfc91a9a7011%3A0xbdedc305ff93a99a!2sPakunden%2C%20Sukorejo%2C%20Blitar%20City%2C%20East%20Java%2067122%2C%20Indonesia!5e0!3m2!1sen!2sus!4v1623741687745!5m2!1sen!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15800.321405638828!2d112.1457826!3d-8.0932885!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78ed68e26eb4c1%3A0x90cff51dd883a2ba!2sPT.%20BANGUN%20INTI%20NUSA!5e0!3m2!1sid!2sid!4v1687182438459!5m2!1sid!2sid"
                 style={{ width: "100%", height: "300px", border: 0 }}
                 allowFullScreen=""
                 aria-hidden="false"
@@ -94,7 +102,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
-      <Footer/>
+      <Footer />
     </>
   );
 };

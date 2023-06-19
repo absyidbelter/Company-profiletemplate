@@ -13,10 +13,15 @@ import JasaLayanan from "../Components/service/Projects/home";
 
 const Home = () => {
   let Navigate = useNavigate();
-  let AboutHandle = () => {
-    Navigate("/about");
+  let ContactHandle = () => {
+    Navigate("/kontak");
   };
 
+  let AboutHandle = () => {
+    Navigate("/tentang-kami");
+  };
+
+  
   return (
     <>
       <div className="main-cover">
@@ -25,7 +30,7 @@ const Home = () => {
             <h1 style={{ whiteSpace: "nowrap" }}>PT. BANGUN IN​TI NUSA </h1>
             <h4>Kontraktor Umum &amp; Perdagangan</h4>
             <h2>"Memberikan mutu dan pelayanan terbaik"</h2>
-            <a onClick={AboutHandle}>about us</a>
+            <a onClick={ContactHandle}>Kontak Kami</a>
           </div>
         </div>
       </div>
@@ -77,7 +82,7 @@ const Home = () => {
         <div style={{ marginTop: "60px", marginBottom: "60px" }}>
           <div>
             <span className="green u-text-sup text-center" style={{ fontSize: "24px" }}>
-              Klein Kami
+              Klien Kami
             </span>
             <p className="text-center">
               Kami telah menyelesaikan berbagai proyek dengan klien kami sebagai
@@ -137,7 +142,7 @@ const Home = () => {
                 03428180890
               </div>
             </div>
-            <div style={{marginTop:"10px", fontFamily:"Comic Sans MS", fontWeight:"bold", fontSize:"20px"}}> www.bangunintinusa.com</div>
+            <div style={{marginTop:"10px", fontFamily:"Comic Sans MS", fontWeight:"bold", fontSize:"20px"}}> bangunintinusa.com</div>
           </div>
         </div>
       </section>

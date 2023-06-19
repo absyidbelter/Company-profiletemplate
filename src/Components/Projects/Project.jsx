@@ -19,12 +19,12 @@ const ProjectCom = () => {
     <section id="project">
       <div>
         <section style={{ marginTop: "-200"}}>
-          <h1>Riwayat Pengerjaan Proyek</h1>
+          <h1 className="text-center">Riwayat Pengerjaan Proyek</h1>
           <ContinarExperience/>
         </section >
       
         <section>
-          <h1>Pekerjaan Proyek Tahun 2019</h1>
+          <h1 className="text-center">Pekerjaan Proyek Tahun 2019</h1>
         </section>
         <Continar />
         <ContinarThree />
@@ -38,7 +38,7 @@ const ProjectCom = () => {
         <ContinarTwelve />
         <ContinarFour />
         <section>
-          <h1>Pekerjaan Proyek Tahun 2020</h1>
+          <h1 className="text-center">Pekerjaan Proyek Tahun 2020</h1>
         </section>
         <ContinarFifteen />
       </div>
