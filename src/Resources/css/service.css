@@ -88,6 +88,18 @@
 
   .impactfull-card-service {
     width: 100%;
-    height: auto;
+    height: 100%;
+  }
+
+  .image-service {
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px !important;
+    margin-right: 5px;
+  }
+
+  .grid {
+    border-radius: 4px;
+    margin-right: auto;
   }
 }

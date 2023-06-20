@@ -15,7 +15,6 @@ import { useAnimation } from "framer-motion";
 import AboutSection from "../Components/About-home/about-sec";
 import ServicesLingkup from "../Components/service/Projects/Lingkup-layanan/Services";
 
-
 const Home = () => {
   let Navigate = useNavigate();
   let ContactHandle = () => {
@@ -25,7 +24,6 @@ const Home = () => {
   let AboutHandle = () => {
     Navigate("/tentang-kami");
   };
-  
 
   return (
     <>
@@ -36,7 +34,7 @@ const Home = () => {
             <h4>Kontraktor Umum &amp; Perdagangan</h4>
             <h2>"Memberikan mutu dan pelayanan terbaik"</h2>
             <a onClick={ContactHandle}>Kontak Kami</a>
-            <div className="social-icon" style={{ marginTop: "-18px"}}>
+            <div className="social-icon" style={{ marginTop: "-18px" }}>
               <a
                 href="mailto:pt.bangunintinusa@gmail.com"
                 target="_blank"
@@ -57,9 +55,9 @@ const Home = () => {
         </div>
       </div>
       <section id="about">
-        <AboutSection/>
+        <AboutSection />
       </section>
-      <section id="clients" style={{ backgroundColor: "#F8F8FF" }}>
+      <section id="clients" className="client-background">
         <div style={{ marginTop: "50px", marginBottom: "80px" }}>
           <div>
             <span
@@ -76,8 +74,7 @@ const Home = () => {
               memberikan layanan jasa yaitu
             </p>
           </div>
-          <ServicesLingkup/>
-          {/* <JasaLayanan /> */}
+          <ServicesLingkup />
         </div>
       </section>
 
@@ -98,7 +95,10 @@ const Home = () => {
           <ServiceCom />
         </div>
       </section>
-      <section id="contactus" style={{ backgroundColor: "#04aa6d", marginBottom: "-300px" }}>
+      <section
+        id="contactus"
+        style={{ backgroundColor: "#04aa6d", marginBottom: "-300px" }}
+      >
         <div className="flex main-container">
           <div className="item w-60">
             <div className="contact-info mt-30">
@@ -129,7 +129,7 @@ const Home = () => {
                   <i className="icon">
                     <FontAwesomeIcon icon={faMap} size="sm" />
                   </i>{" "}
-                  <span style={{ marginRight: "-150px" }}>
+                  <span className="address">
                     Perum. Bengawan Solo Regency Block C - No. 01 Kota Blitar,
                     Jawa Timur
                   </span>
