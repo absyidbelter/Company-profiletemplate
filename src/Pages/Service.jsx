@@ -34,12 +34,18 @@ const Services = () => {
           <h1>Lingkup Pelayanan</h1>
           <ul className="breadcrumb">
             <li>
-              <button onClick={Homehandle}>Home</button>
+              <NavLink
+                to="/beranda"
+                className={(props) => (props.isActive ? "active" : "")}
+              >
+                {" "}
+                Beranda
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/services" activeClassName="active">
-                Lingkup PeLayanan
-              </NavLink>
+              <a href="#lingkup-pelayanan" className="active">
+                Lingkup Pelayanan
+              </a>
             </li>
           </ul>
         </div>

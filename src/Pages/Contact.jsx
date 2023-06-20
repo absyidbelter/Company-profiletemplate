@@ -17,8 +17,8 @@ const Contact = () => {
           <h1>Kontak Kami</h1>
           <ul className="breadcrumb">
             <li>
-              <NavLink to="/home" activeClassName="active">
-                Home
+              <NavLink to="/beranda" activeClassName="active">
+                Beranda
               </NavLink>
             </li>
             <li>

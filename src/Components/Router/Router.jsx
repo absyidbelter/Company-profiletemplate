@@ -12,8 +12,8 @@ const Router = () => {
         <Route path="/tentang-kami" element={<About />} />
         <Route path="/lingkup-pelayanan" element={<Services />} />
         <Route path="/galeri" element={<Projects />} />
-        <Route path="/aset-pendukung" element={<Contact />} />
-        <Route path="/kontak" element={<Assets />} />
+        <Route path="/aset-pendukung" element={<Assets />} />
+        <Route path="/kontak" element={<Contact />} />
       </Routes>
     </>
   );

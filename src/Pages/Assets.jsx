@@ -12,16 +12,16 @@ const Assets = () => {
           <ul className="breadcrumb">
             <li>
               <NavLink
-                to="/home"
+                to="/beranda"
                 className={(props) => (props.isActive ? "active" : "")}
               >
                 {" "}
-                Home
+                Beranda
               </NavLink>
             </li>
             <li>
               <a href="#" className="active">
-                project
+                Aset Pendukung
               </a>
             </li>
           </ul>

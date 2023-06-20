@@ -4,12 +4,6 @@ import TentangKamiPDF from "../Resources/pdf/TentangKami.pdf";
 import Footer from "../Components/Footer/Footer";
 
 const About = () => {
-  let Navigate = useNavigate();
-
-  let Homehandle = () => {
-    Navigate("/home");
-  };
-
   return (
     <>
       <div className="cover-page">
@@ -17,12 +11,18 @@ const About = () => {
           <h1>Tentang Kami</h1>
           <ul className="breadcrumb">
             <li>
-              <button onClick={Homehandle}>Home</button>
+              <NavLink
+                to="/beranda"
+                className={(props) => (props.isActive ? "active" : "")}
+              >
+                {" "}
+                Beranda
+              </NavLink>
             </li>
             <li>
-              <NavLink className={(props) => (props.isActive ? "active" : "")}>
+              <a href="#tentang-kami" className="active">
                 Tentang Kami
-              </NavLink>
+              </a>
             </li>
           </ul>
         </div>

@@ -12,23 +12,23 @@ const Projects = () => {
           <ul className="breadcrumb">
             <li>
               <NavLink
-                to="/home"
+                to="/beranda"
                 className={(props) => (props.isActive ? "active" : "")}
               >
                 {" "}
-                Home
+                Beranda
               </NavLink>
             </li>
             <li>
               <a href="#galeri" className="active">
-                galeri
+                Galeri
               </a>
             </li>
           </ul>
         </div>
       </div>
       <Project />
-      <Footer/>
+      <Footer />
     </>
   );
 };
