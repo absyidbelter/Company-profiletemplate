@@ -8,6 +8,8 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { About, Project, Contact, ServiceCom } from "../Components";
 import logo from "../Resources/img/logo.png";
+import icon1 from "../Resources/img/whatsapp.png";
+import icon2 from "../Resources/img/email.png";
 import "../Resources/css/home.css";
 import JasaLayanan from "../Components/service/Projects/home";
 
@@ -21,7 +23,6 @@ const Home = () => {
     Navigate("/tentang-kami");
   };
 
-  
   return (
     <>
       <div className="main-cover">
@@ -31,6 +32,23 @@ const Home = () => {
             <h4>Kontraktor Umum &amp; Perdagangan</h4>
             <h2>"Memberikan mutu dan pelayanan terbaik"</h2>
             <a onClick={ContactHandle}>Kontak Kami</a>
+            <div className="social-icon" style={{ marginTop: "-18px"}}>
+              <a
+                href="mailto:pt.bangunintinusa@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={icon2} alt="Icon" />
+              </a>
+              <a
+                href="https://api.whatsapp.com/send?phone=081249450891"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ marginLeft: "-170px" }}
+              >
+                <img src={icon1} alt="Icon" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -69,7 +87,10 @@ const Home = () => {
             >
               Lingkup Bidang Layanan
             </span>
-            <p className="text-center" style={{ marginBottom: "50px", color: "black"}}>
+            <p
+              className="text-center"
+              style={{ marginBottom: "50px", color: "black" }}
+            >
               Berdasarkan kualifikasi yang dimiliki PT. Bangun Inti Nusa dapat
               memberikan layanan jasa yaitu
             </p>
@@ -77,11 +98,14 @@ const Home = () => {
           <JasaLayanan />
         </div>
       </section>
-      
+
       <section>
         <div style={{ marginTop: "60px", marginBottom: "60px" }}>
           <div>
-            <span className="green u-text-sup text-center" style={{ fontSize: "24px" }}>
+            <span
+              className="green u-text-sup text-center"
+              style={{ fontSize: "24px" }}
+            >
               Klien Kami
             </span>
             <p className="text-center">
@@ -102,8 +126,11 @@ const Home = () => {
         >
           <div className="contact-info mt-30 flex">
             <div className="item w-100">
-              <h1 >PT BANGUN INTI NUSA</h1>
-              <h5 style={{color:"blanchedalmond"}}> Kontraktor Umum dan Perdagangan</h5>
+              <h1>PT BANGUN INTI NUSA</h1>
+              <h5 style={{ color: "blanchedalmond" }}>
+                {" "}
+                Kontraktor Umum dan Perdagangan
+              </h5>
               <div className="contact-text-home">
                 <i className="icon">
                   <FontAwesomeIcon icon={faPhone} size="sm" />
@@ -119,7 +146,7 @@ const Home = () => {
                 <i className="icon">
                   <FontAwesomeIcon icon={faEnvelope} size="sm" />
                 </i>{" "}
-                <a href="mailto:pt.bangunintinusa@gmail.com" >
+                <a href="mailto:pt.bangunintinusa@gmail.com">
                   pt.bangunintinusa@gmail.com
                 </a>
               </div>
@@ -129,8 +156,9 @@ const Home = () => {
                 <i className="icon">
                   <FontAwesomeIcon icon={faMap} size="sm" />
                 </i>{" "}
-                <span style={{marginRight: "-150px"}}> 
-                  Perum. Bengawan Solo Regency Block C - No. 01 Kota Blitar, Jawa Timur 
+                <span style={{ marginRight: "-150px" }}>
+                  Perum. Bengawan Solo Regency Block C - No. 01 Kota Blitar,
+                  Jawa Timur
                 </span>
               </div>
             </div>
@@ -142,7 +170,17 @@ const Home = () => {
                 03428180890
               </div>
             </div>
-            <div style={{marginTop:"10px", fontFamily:"Comic Sans MS", fontWeight:"bold", fontSize:"20px"}}> bangunintinusa.com</div>
+            <div
+              style={{
+                marginTop: "10px",
+                fontFamily: "Comic Sans MS",
+                fontWeight: "bold",
+                fontSize: "20px",
+              }}
+            >
+              {" "}
+              bangunintinusa.com
+            </div>
           </div>
         </div>
       </section>
