@@ -1,8 +1,6 @@
 import { useState } from "react";
 import ContinarAs from "./ContinarOne";
 import ContinarOne from "./ContinarOne";
-// import ContinarAss from "./Continar";
-// import ContinarTwo from "./ContinarTwo";
 import PeralatanPDF from "../../Resources/pdf/Peralatan.pdf";
 import "../../Resources/css/asset.css";
 import ContinarTwo from "./Continar";

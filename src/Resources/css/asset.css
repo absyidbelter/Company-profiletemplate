@@ -19,6 +19,11 @@ iframe {
   justify-content: center;
 }
 
+.item-center {
+  display: flex;
+  justify-content: center;
+}
+
 .image-asset {
   display: block;
   width: 200%;
@@ -39,6 +44,7 @@ iframe {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .peralatan-container {
@@ -59,7 +65,7 @@ iframe {
   margin: 5px;
   vertical-align: top;
   border-radius: 5px !important;
-  overflow: hidden; /* Added overflow property */
+  overflow: hidden;
 }
 
 @media only screen and (max-width: 600px) {
@@ -67,8 +73,8 @@ iframe {
     width: 100%;
   }
 
-  .image {
-    width: 300%;
+  .image-asset {
+    width: 100%;
     height: auto;
   }
 
@@ -79,5 +85,20 @@ iframe {
 
   .Cover-content h1 {
     font-size: 40px;
+  }
+
+  .peralatan-section {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .peralatan-container {
+    width: 100%;
+  }
+
+  /* Tambahkan aturan media query untuk PDF */
+  .peralatan-container .pdf {
+    width: 100%;
+    height: 100vh;
   }
 }

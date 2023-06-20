@@ -2,7 +2,7 @@ import "../../../../Resources/css/lingkup-layanan.css";
 
 function Card(props) {
   return (
-    <div className="card">
+    <div className="card text-center">
       <br />
 
       <div className="text-center">

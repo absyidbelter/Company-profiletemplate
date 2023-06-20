@@ -45,7 +45,7 @@ const Home = () => {
                 <img src={icon2} alt="Icon" />
               </a>
               <a
-                href="https://api.whatsapp.com/send?phone="
+                href="https://api.whatsapp.com/send?phone=081249450891"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ marginLeft: "-170px" }}

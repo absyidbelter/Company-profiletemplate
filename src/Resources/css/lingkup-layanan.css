@@ -107,7 +107,7 @@
       width: 49.9%;
     }
     .navbar ul {
-      margin-left: 5rem;
+      margin-left: 0rem;
     }
     .container {
       max-width: 960px;
@@ -124,6 +124,14 @@
       width: 100%;
   
     }
+    .card-cover {
+      padding: 2rem 0rem;
+      border-radius: 15px;
+      height: auto;
+      width: 100%;
+      text-align: center;
+    }
+    
   }
   
   @media (max-width: 768px) { 
@@ -140,6 +148,9 @@
     }
     .col-md-4 {
       width: 55.9%!important;
+    }
+    .card {
+      align-items: center;
     }
   
   }
@@ -158,7 +169,7 @@
   
     }
     .col-md-4 {
-      
+      margin: 0 auto!important;
       width: 100%!important;
     }
     .contact .col-md-4 {
@@ -216,54 +227,6 @@
   
     }
   
-    .navbar .logo {
-      z-index: 3;
-      color: #fafafa;
-      padding-top: 0;
-    }
-  
-    .burger {
-      background-color: #fafafa;
-    }
-    .navbar {
-      backdrop-filter: none;
-      padding: 10px 0;
-    }
-    .navbar ul { 
-      backdrop-filter: blur(20px);
-  
-      z-index: -1;
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100vh;
-      width: 100%;
-      list-style: none;
-      padding: 0;
-      text-align: center;
-      margin: 0;
-      padding-top: 10rem;
-      transform: translateX(-100%);
-    }
-  
-    .navbar ul li {
-      margin: 2rem 0rem;
-      display: block;
-    }
-    .navbar ul li a {
-        cursor: pointer;
-      font-size: 20px;
-      text-decoration: none;
-      color: #fafafa;
-      font-weight: 500;
-    
-    }
-    .col-md-6 {
-      width: 100%;
-    }
-    .row {
-      display: inline-block;
-    }
   }
   
   .mb-2 {
