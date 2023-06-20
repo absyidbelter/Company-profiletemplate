@@ -11,9 +11,9 @@ import logo from "../Resources/img/logo.png";
 import icon1 from "../Resources/img/whatsapp.png";
 import icon2 from "../Resources/img/email.png";
 import "../Resources/css/home.css";
-import JasaLayanan from "../Components/service/Projects/home";
 import { useAnimation } from "framer-motion";
 import AboutSection from "../Components/About-home/about-sec";
+import ServicesLingkup from "../Components/service/Projects/Lingkup-layanan/Services";
 
 
 const Home = () => {
@@ -57,30 +57,6 @@ const Home = () => {
         </div>
       </div>
       <section id="about">
-        {/* <div
-          className="about flex main-container"
-          style={{ marginTop: "80px", marginBottom: "80px" }}
-        >
-          <div className="item">
-            <img src={logo} alt="" />
-          </div>
-          <div className="item" style={{ marginTop: "30px" }}>
-            <div className="flex">
-              <div>
-                <span className="green u-text-sup">Tentang Kami</span>
-                <p>
-                  PT. BANGUN INTI NUSA merupakan salah satu perusahaan yang
-                  bergerak dibidang jasa konstruksi swasta nasional yang
-                  didirikan di kota Blitar pada tanggal 2 Januari 2019 sebagai
-                  langkah usaha untuk mengisi pembangunan bangsa dan negara.
-                </p>
-                <a onClick={AboutHandle} className="green-btn">
-                  Read More
-                </a>
-              </div>
-            </div>
-          </div>
-        </div> */}
         <AboutSection/>
       </section>
       <section id="clients" style={{ backgroundColor: "#F8F8FF" }}>
@@ -100,7 +76,8 @@ const Home = () => {
               memberikan layanan jasa yaitu
             </p>
           </div>
-          <JasaLayanan />
+          <ServicesLingkup/>
+          {/* <JasaLayanan /> */}
         </div>
       </section>
 

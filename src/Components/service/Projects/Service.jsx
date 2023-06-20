@@ -10,22 +10,25 @@ import ItemSer from "./ItemOne";
 
 const ServiceCom = () => {
   const images = [three, four, six, one, five, two, seven];
+  const text = [
+    "UNIVERSITAS BRAWIJAYA MALANG",
+    "PEMERINTAH KABUPATEN BLITAR",
+    "PT. JAPFA COMFFED INDONESIA Tbk",
+    "PT. MILENIUM MEGA MULIA",
+    "PT. CIOMAS ADISATWA",
+    "PT. SARIGUNA PRIMA TIRTA",
+    "POLITEKNIK AKN BLITAR",
+  ];
 
   return (
     <>
-      <section style={{marginTop: "-50px"}}>
+      <section style={{ marginTop: "-50px" }}>
         <div className="grid card-container">
-          <div className="row">
-            <ItemSer src={images[0]} text="​UNIVERSITAS BRAWIJAYA MALANG" />
-            <ItemSer src={images[1]} text="PEMERINTAH KABUPATEN BLITAR" />
-            <ItemSer src={images[2]} text="PT. JAPFA COMFFED INDONESIA Tbk" />
-            <ItemSer src={images[3]} text="PT. MILENIUM MEGA MULIA" />
-          </div>
-          <div className="row">
-            <ItemSer src={images[4]} text="PT. CIOMAS ADISATWA" />
-            <ItemSer src={images[5]} text="PT. SARIGUNA PRIMA TIRTA" />
-            <ItemSer src={images[6]} text="POLITEKNIK AKN BLITAR" />
-          </div>
+          {images.map((image, index) => (
+            <div key={index} className="row">
+              <ItemSer src={image} text={text[index]} />
+            </div>
+          ))}
         </div>
       </section>
     </>
@@ -33,3 +36,4 @@ const ServiceCom = () => {
 };
 
 export default ServiceCom;
+
