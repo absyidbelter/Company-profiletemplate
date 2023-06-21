@@ -27,14 +27,14 @@ const About = () => {
           </ul>
         </div>
       </div>
-      <section id="about">
+      <section id="abouts">
         <section style={{ marginLeft: "-30px" }}>
           <div className="about flex main-container mt-30">
             <div className="item">
-              <img src={logo} alt="" />
+              <img src={logo} className="about-img" />
             </div>
-            <div className="item pt-30">
-              <span className="green u-text-sup u-text-justify">
+            <div id= "about-s" className="item pt-30">
+              <span className="green u-text-sups u-text-justify">
                 Tentang Kami
               </span>
               <p className="u-text-justify">
@@ -48,10 +48,10 @@ const About = () => {
         </section>
         <section style={{ marginTop: "-120px" }}>
           <h4 className="green u-text-sup ">Visi dan Misi</h4>
-          <p style={{ color: "black" }}>
+          <p>
             Visi: Menjadi mitra terbaik sebagai kontraktor Nasional.
           </p>
-          <p style={{ color: "black" }}>
+          <p >
             Misi: Memberikan kepuasan pelanggan melalui pekerjaan berkualitas,
             harga yang kompetitif, dan penyelesaian tepat waktu.
           </p>

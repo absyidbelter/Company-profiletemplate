@@ -6,12 +6,10 @@ import {
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { About, Project, Contact, ServiceCom } from "../Components";
-import logo from "../Resources/img/logo.png";
+import { ServiceCom } from "../Components";
 import icon1 from "../Resources/img/whatsapp.png";
 import icon2 from "../Resources/img/email.png";
 import "../Resources/css/home.css";
-import { useAnimation } from "framer-motion";
 import AboutSection from "../Components/About-home/about-sec";
 import ServicesLingkup from "../Components/service/Projects/Lingkup-layanan/Services";
 

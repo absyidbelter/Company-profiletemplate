@@ -96,9 +96,14 @@ iframe {
     width: 100%;
   }
 
-  /* Tambahkan aturan media query untuk PDF */
   .peralatan-container .pdf {
     width: 100%;
     height: 100vh;
+  }
+
+  .h3 {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
   }
 }
