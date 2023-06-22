@@ -106,4 +106,12 @@ iframe {
     margin-right: 10px;
     text-align: center;
   }
+
+  .h1 {
+    margin-left: 10px;
+  }
+
+  .asset-h3{
+    margin-left: -70px;
+  }
 }

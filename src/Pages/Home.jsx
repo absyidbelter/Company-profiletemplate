@@ -148,6 +148,25 @@ const Home = () => {
                 >
                   bangunintinusa.com
                 </div>
+                <div
+                  style={{
+                    marginTop: "10px",
+                    fontFamily: "arial",
+                    fontSize: "10px",
+                  }}
+                >
+                  Site powered by{" "}
+                  <a
+                    href="https://api.whatsapp.com/send?phone=6285161836960"
+                    target="_blank"
+                  >
+                    ConsoleLog
+                  </a>
+                  . Managed by{" "}
+                  <a href="https://www.rumahweb.com/" target="_blank">
+                    Rumahweb Indonesia
+                  </a>{" "}
+                </div>
               </div>
             </div>
           </div>

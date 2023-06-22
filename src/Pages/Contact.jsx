@@ -32,7 +32,7 @@ const Contact = () => {
       <section id="contactus">
         <div className="flex" style={{ marginTop: "80px", marginLeft: "40px" }}>
           <div className="item w-40">
-            <span className="green u-text-sup">Hubungi Kami</span>
+            <span className="green u-text-sup contact-hub-mob">Hubungi Kami</span>
             <div className="contact-info mt-30 flex">
               <div className="item w-100">
                 <h1>PT BANGUN INTI NUSA</h1>

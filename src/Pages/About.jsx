@@ -27,53 +27,48 @@ const About = () => {
           </ul>
         </div>
       </div>
-      <section id="abouts">
-        <section style={{ marginLeft: "-30px" }}>
-          <div className="about flex main-container mt-30">
-            <div className="item">
-              <img src={logo} className="about-img" />
-            </div>
-            <div id= "about-s" className="item pt-30">
-              <span className="green u-text-sups u-text-justify">
-                Tentang Kami
-              </span>
-              <p className="u-text-justify">
-                PT. Bangun Inti Nusa adalah perusahaan konstruksi swasta
-                nasional yang didirikan di kota Blitar pada tanggal 2 Januari
-                2019. Kami berkomitmen untuk mengisi pembangunan bangsa dan
-                negara dengan kualitas pekerjaan terbaik.
-              </p>
-            </div>
+      <section style={{ marginTop: "120px" }}>
+        <div className="about flex main-container mt-30">
+          <div className="item">
+            <img src={logo} className="about-img" />
           </div>
-        </section>
-        <section style={{ marginTop: "-120px" }}>
-          <h4 className="green u-text-sup ">Visi dan Misi</h4>
-          <p>
-            Visi: Menjadi mitra terbaik sebagai kontraktor Nasional.
-          </p>
-          <p >
-            Misi: Memberikan kepuasan pelanggan melalui pekerjaan berkualitas,
-            harga yang kompetitif, dan penyelesaian tepat waktu.
-          </p>
-          <div className="about">
-            <h4 className="green u-text-sup"> Kebijakan Mutu dan K3</h4>
-            <p className="mt-30 u-text-justify">
-              Kami berkomitmen untuk terus meningkatkan mutu kerja dan hasil
-              kerja secara berkesinambungan. Kami juga berusaha memenuhi harapan
-              dan kepuasan pelanggan dengan menerapkan, merawat, dan melakukan
-              perbaikan berkelanjutan pada sistem manajemen PT. Bangun Inti
-              Nusa.
+          <div id="about-s" className="item pt-30">
+            <span className="green u-text-sups u-text-justify">
+              Tentang Kami
+            </span>
+            <p className="u-text-justify">
+              PT. Bangun Inti Nusa adalah perusahaan konstruksi swasta nasional
+              yang didirikan di kota Blitar pada tanggal 2 Januari 2019. Kami
+              berkomitmen untuk mengisi pembangunan bangsa dan negara dengan
+              kualitas pekerjaan terbaik.
             </p>
-            <h4 className="green u-text-sup">Profil Perusahaan</h4>
-            <embed
-              src={`${TentangKamiPDF}#toolbar=0&navpanes=0&scrollbar=0&view=FitH`}
-              width="100%"
-              height="500"
-              type="application/pdf"
-              fullscreen="true"
-            />
           </div>
-        </section>
+        </div>
+        <h4 className="green u-text-sup ">Visi dan Misi</h4>
+        <p style={{ color: "black" }}>
+          Visi: Menjadi mitra terbaik sebagai kontraktor Nasional.
+        </p>
+        <p style={{ color: "black" }}>
+          Misi: Memberikan kepuasan pelanggan melalui pekerjaan berkualitas,
+          harga yang kompetitif, dan penyelesaian tepat waktu.
+        </p>
+        <div className="abouts">
+          <h4 className="green u-text-sup"> Kebijakan Mutu dan K3</h4>
+          <p className="mt-30 u-text-justify" style={{color: "black"}}>
+            Kami berkomitmen untuk terus meningkatkan mutu kerja dan hasil kerja
+            secara berkesinambungan. Kami juga berusaha memenuhi harapan dan
+            kepuasan pelanggan dengan menerapkan, merawat, dan melakukan
+            perbaikan berkelanjutan pada sistem manajemen PT. Bangun Inti Nusa.
+          </p>
+          <h4 className="green u-text-sup">Profil Perusahaan</h4>
+          <embed
+            src={`${TentangKamiPDF}#toolbar=0&navpanes=0&scrollbar=0&view=FitH`}
+            width="100%"
+            height="500"
+            type="application/pdf"
+            fullscreen="true"
+          />
+        </div>
       </section>
       <Footer />
     </>

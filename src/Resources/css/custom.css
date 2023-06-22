@@ -546,7 +546,6 @@ ul.breadcrumb li a.active {
   font-weight: 700 !important;
   color: #24b47e !important;
   letter-spacing: normal !important;
-  margin-left: 20px;
   text-align: center;
 }
 
@@ -592,6 +591,8 @@ ul.breadcrumb li a.active {
   p {
     font-size: 18px;
     color: #767676;
+    text-align: center;
+    margin-left: 15px;
   }
 
   h4 {
@@ -697,7 +698,7 @@ ul.breadcrumb li a.active {
   .main-cover {
     height: auto;
     width: 100%;
-    max-width: 100vh; 
+    max-width: 100vh;
   }
   .Cover-content {
     width: 100%;
@@ -759,12 +760,12 @@ ul.breadcrumb li a.active {
     margin-left: 1px;
     margin-right: 0px;
   }
-  
+
   /* about */
 
-   .about.flex {
+  .about.flex {
     flex-direction: column;
-    align-items:start;
+    align-items: start;
   }
 
   .about .item {
@@ -782,13 +783,6 @@ ul.breadcrumb li a.active {
   }
 
   .about p {
-    line-height: 22px;
-    margin-right: -130px;
-    margin-left: 20px;
-    text-align: justify;
-  }
-
-  .abouts p {
     line-height: 22px;
     margin-right: -130px;
     margin-left: 20px;
@@ -813,7 +807,7 @@ ul.breadcrumb li a.active {
   /* ------ */
 
   .main-cover {
-    height: 130vh;
+    height: 90vh;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -827,7 +821,7 @@ ul.breadcrumb li a.active {
 
   .client-background {
     background-color: #f8f8ff;
-    margin-right:0%;
+    margin-right: 0%;
     width: auto;
     height: auto;
   }
@@ -843,31 +837,35 @@ ul.breadcrumb li a.active {
     padding-top: 50px;
     margin-bottom: 80px;
   }
-  
+
   .cover-page h1 {
-    font-size: 24px; 
+    font-size: 24px;
   }
 
   #about-s p {
-    padding: 0;
-    line-height: 26px;
-    color: #1b3dea;
-    display: flex;
-    text-align: justify;
-    margin-bottom: 130px;
-    margin-left:  40px;
-    margin-right: -200px;
+    line-height: 22px;
+    color: #161515;
+    text-align: left;
+    margin-left: 40px;
   }
-  
+
+  #abouts p {
+    line-height: 22px;
+    margin-right: 10px;
+    margin-left: 10px;
+    text-align: justify;
+  }
+
   .u-text-sups {
     font-size: 20px !important;
     font-weight: 700 !important;
     color: #24b47e !important;
     letter-spacing: normal !important;
-    margin-left: 40px;
     margin-right: 0px;
+    margin-left: 40px;
+    text-align: center;
   }
-  
+
   .about-img {
     max-width: 100%;
     object-fit: cover;
@@ -881,21 +879,23 @@ ul.breadcrumb li a.active {
 
   .abouts.flex {
     flex-direction: column;
-    align-items:start;
+    align-items: start;
   }
 }
 
 @media (max-width: 768px) {
   #contactus {
     padding: 0px 0;
+    margin-left: 0;
+    margin-right: 0px;
   }
-
+  
   .main-container {
     flex-direction: column;
   }
 
   .item {
-    width: 100%;
+    width: 90%;
   }
 
   .w-60,
@@ -903,9 +903,9 @@ ul.breadcrumb li a.active {
     margin: 0;
   }
 
-  .contact-text-home i {
-    margin-right: 10px;
-    margin-left: 5px;
+  .contact-text-home {
+    margin-right: -5px;
+    margin-left: 2px;
   }
 
   .map-container {
@@ -915,17 +915,28 @@ ul.breadcrumb li a.active {
   }
 
   .address {
-    margin-right: 0; 
-    display: block; 
-    margin-left: 5px; 
-    margin-bottom: 10px; 
+    margin-right: -20px;
+    display: flex-start;
+    margin-left: 0px;
+    margin-bottom: 10px;
+    float: left;
   }
 
-  h5,
-  h1,
   div {
-    margin-left: 2px;
+    margin-left: 0px;
     margin-right: 2px;
   }
-}
+  h3, h1 , h5
+  {
+    margin-left:10px;
+  }
 
+  .footer-mob {
+    margin-left: 10px;
+    margin-top: -10px;
+  }
+
+  .contact-hub-mob {
+    margin-left: 10px;
+  }
+}

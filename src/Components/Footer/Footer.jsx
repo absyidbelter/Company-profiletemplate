@@ -8,8 +8,9 @@ const Footer = () => {
       style={{
         backgroundColor: "#04aa6d",
         marginBottom: "-300px",
-        marginLeft: "-900",
-        marginRight: "-3000",
+        marginLeft: "-20px",
+        marginRight: "-40px",
+        alignContent: "center",
       }}
     >
       <div
@@ -21,22 +22,50 @@ const Footer = () => {
             <h1 style={{ color: "black", textAlign: "left" }}>
               PT BANGUN INTI NUSA
             </h1>
-            <h5 style={{ color: "blanchedalmond", textAlign: "left" }}>
+            <h5
+              style={{
+                color: "blanchedalmond",
+                textAlign: "left",
+                marginTop: "-12px",
+              }}
+            >
               {" "}
               Kontraktor Umum dan Perdagangan
             </h5>
-            <div
+            <div className="footer-mob"
               style={{
-                marginTop: "10px",
+                marginTop: "5px",
                 fontFamily: "Comic Sans MS",
                 fontWeight: "bold",
-                fontSize: "13px",
+                fontSize: "18px",
                 color: "black",
                 textAlign: "left",
+                // marginLeft: "10px",
               }}
             >
               {" "}
               bangunintinusa.com
+            </div>
+            <div className="footer-mob"
+              style={{
+                marginTop: "2px",
+                fontFamily: "arial",
+                fontSize: "10px",
+                marginBottom: "10px",
+                // marginLeft: "10px",
+              }}
+            >
+              Site powered by{" "}
+              <a
+                href="https://api.whatsapp.com/send?phone=6285161836960"
+                target="_blank"
+              >
+                ConsoleLog
+              </a>
+              . Managed by{" "}
+              <a href="https://www.rumahweb.com/" target="_blank">
+                Rumahweb Indonesia
+              </a>{" "}
             </div>
           </div>
         </div>

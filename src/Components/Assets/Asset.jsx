@@ -10,16 +10,6 @@ const AssetCom = () => {
   return (
     <>
       <section id="project">
-        <h1
-          style={{
-            color: "black",
-            textAlign: "left",
-            paddingLeft: 80,
-            paddingTop: 40,
-          }}
-        >
-          Aset Pendukung
-        </h1>
         <h3
           style={{
             color: "black",
@@ -27,14 +17,16 @@ const AssetCom = () => {
             paddingLeft: 80,
             fontWeight: "normal",
             paddingBottom: 0,
+            paddingTop: 40
           }}
+          className="asset-h3"
         >
           Demi menjamin mutu yang berkualitas kami telah mempersiapkan aset yang
           menunjang dalam menyelesaikan pekerjaan.
         </h3>
 
         <section>
-          <span className="green u-text-sup ">Kantor Kami</span> <ContinarOne />
+          <span className="green u-text-sup " style={{marginTop: "-60px"}}>Kantor Kami</span> <ContinarOne />
         </section>
         <section>
           <span className="green u-text-sup">Workshop</span>
@@ -53,8 +45,9 @@ const AssetCom = () => {
             />
           </div>{" "}
         </section>
+        <Footer/>
       </section>
-      <Footer/>
+      
     </>
   );
 };

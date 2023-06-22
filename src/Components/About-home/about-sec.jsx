@@ -51,7 +51,7 @@ const AboutSection = () => {
     <section id="about">
       <motion.div
         className="about flex main-container"
-        style={{ marginTop: "80px", marginBottom: "80px" }}
+        style={{ marginTop: "60px", marginBottom: "40px" }}
         initial="hidden"
         animate={controls}
         variants={containerVariants}
