@@ -160,7 +160,7 @@ const Home = () => {
                     href="https://api.whatsapp.com/send?phone=6285161836960"
                     target="_blank"
                   >
-                    ConsoleLog
+                    console.log()
                   </a>
                   . Managed by{" "}
                   <a href="https://www.rumahweb.com/" target="_blank">
