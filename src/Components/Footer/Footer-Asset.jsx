@@ -57,10 +57,6 @@ const FooterAsset = () => {
               >
                 ConsoleLog
               </a>
-              . Managed by{" "}
-              <a href="https://www.rumahweb.com/" target="_blank">
-                Rumahweb Indonesia
-              </a>{" "}
             </div>
           </div>
         </div>

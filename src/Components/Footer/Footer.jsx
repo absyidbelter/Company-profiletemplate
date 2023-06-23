@@ -65,10 +65,6 @@ const Footer = () => {
               >
                 console.log()
               </a>
-              . Managed by{" "}
-              <a href="https://www.rumahweb.com/" target="_blank">
-                Rumahweb Indonesia
-              </a>{" "}
             </div>
           </div>
         </div>
