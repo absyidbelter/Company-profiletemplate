@@ -4,10 +4,7 @@ import "../Resources/css/service.css";
 import { motion, useAnimation } from "framer-motion";
 import ServiceMapers from "../Components/utils";
 import { useInView } from "react-intersection-observer";
-import {
-  headingAnimation,
-  sectionBodyAnimation,
-} from "../hooks/useAnimation";
+import { headingAnimation, sectionBodyAnimation } from "../hooks/useAnimation";
 import ClientCom from "../Components/Assets/Asset";
 import Footer from "../Components/Footer/Footer";
 import { ServiceCom } from "../Components";
@@ -67,7 +64,7 @@ const Services = () => {
           Berdasarkan kualifikasi yang dimiliki PT. Bangun Inti Nusa dapat
           memberikan layanan jasa sebagai berikut :
         </h3>
-       <ServicesLingkup/>
+        <ServicesLingkup />
       </section>
       <div style={{ marginTop: "0px", marginBottom: "60px" }}>
         <div>
@@ -84,7 +81,10 @@ const Services = () => {
         </div>
         <ServiceCom />
       </div>
-      <Footer />
+      <Footer>
+        {" "}
+        <Footer />
+      </Footer>
     </>
   );
 };

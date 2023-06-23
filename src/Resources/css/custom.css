@@ -208,7 +208,7 @@ ul.topnav li.right {
 .mobile-menu-toggle span {
   height: 3px;
   width: 100%;
-  background-color: #000;
+  background-color: #161515;
   display: block;
 }
 
@@ -555,6 +555,17 @@ ul.breadcrumb li a.active {
   height: 254px;
   border-radius: 6px;
   display: block;
+
+
+}
+
+.footer-mobs {
+  font: arial;
+  font-size: 10px;
+  margin-top: 2px;
+  margin-bottom: 10px;
+  margin-Left: -235px;
+  color: black
 }
 
 @media only screen and (max-width: 768px) {
@@ -661,6 +672,7 @@ ul.breadcrumb li a.active {
 
   .mobile-menu-toggle {
     display: flex;
+    color: #000;
   }
 
   .right {
@@ -881,6 +893,7 @@ ul.breadcrumb li a.active {
     flex-direction: column;
     align-items: start;
   }
+
 }
 
 @media (max-width: 768px) {
@@ -939,4 +952,10 @@ ul.breadcrumb li a.active {
   .contact-hub-mob {
     margin-left: 10px;
   }
+
+  .footer-mobs {
+    margin-left: -90px;
+    margin-top: 5px;
+  }
 }
+

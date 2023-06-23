@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import AssetCom from "../Components/Assets/Asset";
+import Footer from "../Components/Footer/Footer";
 
 
 const Assets = () => {

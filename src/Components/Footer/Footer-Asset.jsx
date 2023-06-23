@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../../Resources/img/logo.png";
 
-const Footer = () => {
+const FooterAsset = () => {
   return (
     <section
       id="contactus"
@@ -48,15 +48,7 @@ const Footer = () => {
               bangunintinusa.com
             </div>
             <div
-              className="footer-mob"
-              style={{
-                marginTop: "2px",
-                fontFamily: "arial",
-                fontSize: "10px",
-                marginBottom: "10px",
-                // marginLeft: "10px",
-                color: "black",
-              }}
+              className="footer-mobs"
             >
               Site powered by{" "}
               <a
@@ -77,4 +69,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default FooterAsset;

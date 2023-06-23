@@ -5,6 +5,7 @@ import PeralatanPDF from "../../Resources/pdf/Peralatan.pdf";
 import "../../Resources/css/asset.css";
 import ContinarTwo from "./Continar";
 import Footer from "../Footer/Footer";
+import FooterAsset from "../Footer/Footer-Asset";
 
 const AssetCom = () => {
   return (
@@ -45,9 +46,9 @@ const AssetCom = () => {
             />
           </div>{" "}
         </section>
-        <Footer/>
+        {/* <Footer/> */}
       </section>
-      
+      <FooterAsset/>
     </>
   );
 };
