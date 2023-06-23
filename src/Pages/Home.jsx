@@ -139,21 +139,13 @@ const Home = () => {
                   03428180890
                 </div>
                 <div
-                  style={{
-                    marginTop: "10px",
-                    fontFamily: "Comic Sans MS",
-                    fontWeight: "bold",
-                    fontSize: "20px",
-                  }}
+                  className="footer-desk"
+                  
                 >
                   bangunintinusa.com
                 </div>
                 <div
-                  style={{
-                    marginTop: "10px",
-                    fontFamily: "arial",
-                    fontSize: "10px",
-                  }}
+                 className="footer-desk-a"
                 >
                   Site powered by{" "}
                   <a
